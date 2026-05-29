@@ -1,4 +1,4 @@
-//Program to find the second largest element in an array
+//Program to find the third largest element in an array
 #include <iostream>
 using namespace std;
 
@@ -42,3 +42,4 @@ int main() {
 
     return 0;
 }
+

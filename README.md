@@ -1,6 +1,6 @@
 # DLithe C++ Practice Programs
 
-A collection of beginner-friendly C++ programs created for practicing core programming concepts. The repository currently focuses on arrays, number logic, loops, conditionals, and basic problem-solving patterns.
+A collection of beginner-friendly C++ programs created for practicing core programming concepts. The repository currently focuses on arrays, number logic, loops, conditionals, pointers, references, and basic problem-solving patterns.
 
 ## Overview
 
@@ -18,6 +18,9 @@ Each folder contains one standalone C++ program. The programs can be compiled an
 | `p6` | `p6.cpp` | Numbers | Checks whether a number is a palindrome. |
 | `p7` | `p7.cpp` | Arrays | Checks whether an array is a palindrome. |
 | `p8` | `p8.cpp` | Numbers | Checks whether a number is an Armstrong number. |
+| `Pointers` | `pointers.cpp` | Pointers | Demonstrates pointer usage with simple examples. |
+| `References in C` | `pass-by-reference.cpp` | References | Shows pass-by-reference function behavior. |
+| `References in C` | `pass-by-value.cpp` | References | Shows pass-by-value function behavior. |
 
 ## Repository Structure
 
@@ -39,6 +42,11 @@ DLithe/
 |   `-- p7.cpp
 |-- p8/
 |   `-- p8.cpp
+|-- Pointers/
+|   `-- pointers.cpp
+|-- References in C/
+|   |-- pass-by-reference.cpp
+|   `-- pass-by-value.cpp
 `-- README.md
 ```
 

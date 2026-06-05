@@ -1,4 +1,4 @@
-// to find sum of n numbers using recursion
+// This program calculates the sum of the first n natural numbers using recursion.
 
 #include <iostream>
 #include <stdlib.h>

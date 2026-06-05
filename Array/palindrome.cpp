@@ -1,3 +1,5 @@
+// Check if an array is palindrome or not
+
 #include <iostream>
 using namespace std;
 int n = 5;

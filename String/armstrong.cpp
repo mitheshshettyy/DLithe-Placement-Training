@@ -1,4 +1,5 @@
 // Program to find the average of an array
+
 #include <iostream>
 using namespace std;
 

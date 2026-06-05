@@ -1,6 +1,7 @@
+// Pass by Reference in C++
+
 #include <stdio.h>
 
-// Function using pass by reference (via pointer)
 void updateValue(int *y)
 {
     

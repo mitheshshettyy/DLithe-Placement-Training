@@ -8,20 +8,14 @@ Each source file contains one standalone C++ program. The programs can be compil
 
 ## Programs
 
-| Folder | Source File | Topic | Description |
-| --- | --- | --- | --- |
-| `Array` | `largest.cpp` | Arrays | Finds the largest element in an array. |
-| `Array` | `average.cpp` | Arrays | Calculates the average of array elements. |
-| `Array` | `reverse.cpp` | Arrays | Reverses an array in place. |
-| `Array` | `secondlargest.cpp` | Arrays | Finds the second largest distinct element in an array. |
-| `Array` | `thirdlargest.cpp` | Arrays | Finds the third largest distinct element in an array. |
-| `Array` | `palindrome.cpp` | Arrays | Checks whether an array is a palindrome. |
-| `String` | `palindrome.cpp` | Numbers | Checks whether a number is a palindrome. |
-| `String` | `armstrong.cpp` | Numbers | Checks whether a number is an Armstrong number. |
-| `String` | `alphabets.cpp` | Strings | Prints alphabetic characters from a character array. |
-| `Pointers` | `pointers.cpp` | Pointers | Demonstrates pointer usage with simple examples. |
-| `References in C` | `pass-by-reference.cpp` | References | Shows pass-by-reference function behavior. |
-| `References in C` | `pass-by-value.cpp` | References | Shows pass-by-value function behavior. |
+| Folder | Description |
+| --- | --- |
+| `Array` | Contains programs for array traversal, searching, reversing, and palindrome checks. |
+| `String` | Contains programs for character arrays, palindrome checks, and number-based string-style practice. |
+| `Matrix` | Contains programs for practicing matrix input, traversal, and operations. |
+| `Pointers` | Contains programs that demonstrate basic pointer usage in C++. |
+| `Recursion` | Contains programs that solve common problems using recursive functions. |
+| `References in C` | Contains programs that compare pass-by-value and pass-by-reference behavior. |
 
 ## Repository Structure
 

@@ -5,17 +5,14 @@
 using namespace std;
 
 bool isPalindrome(const string& str, int left, int right) {
-    // Base case: If the left index is greater than or equal to the right index, it's a palindrome
     if (left >= right) {
         return true;
     }
     
-    // Check if the characters at the current indices are the same
     if (str[left] != str[right]) {
-        return false; // Not a palindrome
+        return false; 
     }
     
-    // Recursive case: Move towards the center
     return isPalindrome(str, left + 1, right - 1);
 }
 

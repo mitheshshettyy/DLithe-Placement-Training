@@ -4,60 +4,87 @@
 #include <vector>
 using namespace std;
 
-// Tree node structure
-class TreeNode {
+class Node {
 public:
     int data;
-    vector<TreeNode*> children;
+    vector<Node*> children;
 
-    TreeNode(int value) {
-        data = value;
+    Node(int x) {
+        data = x;
     }
 };
 
-// Function to add a child to a tree node
-void addChild(TreeNode* parent, TreeNode* child) {
+// Function to add child to the node
+void addChild(Node *parent, Node *child) {
     parent->children.push_back(child);
 }
 
-// Function to print the tree in pre-order traversal
-void preOrderTraversal(TreeNode* node) {
-    if (node == nullptr) {
+// Function to print children of each node
+void printParent(Node *node, Node *parent) {
+    if (parent == nullptr)
+        cout << node->data << " -> NULL" << endl;
+    else
+        cout << node->data << " -> " << parent->data << endl;
+
+    for (auto child : node->children)
+        printParent(child,node);
+}
+
+// Function to print children of each node
+void printChildren(Node* node) {
+    cout << node->data << " -> ";
+    for(auto child : node->children) {
+        cout << child->data << " "; 
+    }
+    cout << endl;
+
+    for (auto child : node->children)
+        printChildren(child);
+}
+
+// Function to print leaf nodes
+void printLeafNodes(Node* node) {
+    if(node->children.empty()) {
+        cout << node->data << " ";
         return;
     }
-    cout << node->data << " ";
-    for (TreeNode* child : node->children) {
-        preOrderTraversal(child);
+    for (auto child : node->children)
+        printLeafNodes(child);
+}
+
+// Function to print degrees of each node 
+void printDegrees(Node* node) {
+    cout << node->data << " -> " << node->children.size() << endl;
+
+    for(auto child : node->children) {
+        printDegrees(child);
     }
 }
 
 int main() {
-    // Create root node
-    TreeNode* root = new TreeNode(1);
+    Node* root = new Node(1); 
+    Node* n2 = new Node(2); 
+    Node* n3 = new Node(3); 
+    Node* n4 = new Node(4); 
+    Node* n5 = new Node(5); 
 
-    // Create child nodes
-    TreeNode* child1 = new TreeNode(2);
-    TreeNode* child2 = new TreeNode(3);
-    TreeNode* child3 = new TreeNode(4);
-    TreeNode* child4 = new TreeNode(5);
+    addChild(root,n2);
+    addChild(root,n3);
+    addChild(n2,n4);
+    addChild(n2,n5);
 
-    // Build the tree
-    addChild(root, child1);
-    addChild(root, child2);
-    addChild(child1, child3);
-    addChild(child1, child4);
+    cout << "Parents of each node: " << endl;
+    printParent(root, nullptr);
 
-    // Print the tree in pre-order traversal
-    cout << "Pre-order Traversal: ";
-    preOrderTraversal(root);
+    cout << "Children of each node: " << endl;
+    printChildren(root);
+
+    cout << "Leaf nodes: " << endl;
+    printLeafNodes(root);
     cout << endl;
 
-    // Clean up memory (delete nodes)
-    delete root;
-    delete child1;
-    delete child2;
-    delete child3;
-    delete child4;
+    cout << "Degrees of nodes:" << endl;
+    printDegrees(root);
 
     return 0;
 }

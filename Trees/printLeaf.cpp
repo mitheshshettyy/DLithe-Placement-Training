@@ -1,12 +1,5 @@
 // Program to print all leaf nodes in a tree
 
-//Structure of the tree used in this program:
-//         1
-//       /   \
-//      2     3
-//     / \
-//    4   5
-
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -43,6 +36,12 @@ void printLeafNodes(TreeNode* node) {
 }
 
 int main() {
+//         1
+//       /   \
+//      2     3
+//     / \
+//    4   5
+
     // Create root node
     TreeNode* root = new TreeNode(1);
 

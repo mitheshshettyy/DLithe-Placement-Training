@@ -1,3 +1,5 @@
+// Program to search an element in a binary tree
+
 #include<iostream>
 using namespace std;
 
@@ -30,7 +32,6 @@ bool ifExists(Node* root, int key) {
 }
 
 int main() {
-    // Binary tree  
     //          0
     //        /  \
     //       1    2
@@ -38,6 +39,7 @@ int main() {
     //     3   4 5   6
     //    /   / \
     //   7   8   9
+    
     Node* root = new Node(0);
     root->left = new Node(1);
     root->left->left = new Node(3);

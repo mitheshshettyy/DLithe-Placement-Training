@@ -1,51 +1,45 @@
 # DLithe C++ Practice Programs
 
-A collection of beginner-friendly C++ programs created for practicing core programming concepts. The repository currently focuses on arrays, number logic, loops, conditionals, pointers, references, and basic problem-solving patterns.
+A collection of beginner-friendly C++ programs for practicing core programming concepts, data structures, and problem-solving techniques.
 
 ## Overview
 
-Each source file contains one standalone C++ program. The programs can be compiled and run independently, making the repository easy to use for learning, revision, and practice.
+This repository contains standalone C++ programs organized by topic. Each file can be compiled and run independently, making it suitable for learning, revision, and daily practice.
 
-## Programs
+## Topics Covered
 
-| Folder | Description |
-| --- | --- |
-| `Array` | Contains programs for array traversal, searching, reversing, and palindrome checks. |
-| `String` | Contains programs for character arrays, palindrome checks, and number-based string-style practice. |
-| `Matrix` | Contains programs for practicing matrix input, traversal, and operations. |
-| `Pointers` | Contains programs that demonstrate basic pointer usage in C++. |
-| `Recursion` | Contains programs that solve common problems using recursive functions. |
-| `References in C` | Contains programs that compare pass-by-value and pass-by-reference behavior. |
+- Arrays and basic number logic
+- Strings and character-based problems
+- Pointers and references
+- Recursion
+- Linked lists
+- Stacks, queues, and trees
+- Graphs and matrix-based problems
 
 ## Repository Structure
 
 ```text
 DLithe/
-|-- Array/
-|   |-- average.cpp
-|   |-- largest.cpp
-|   |-- palindrome.cpp
-|   |-- reverse.cpp
-|   |-- secondlargest.cpp
-|   `-- thirdlargest.cpp
-|-- Pointers/
-|   `-- pointers.cpp
-|-- References in C/
-|   |-- pass-by-reference.cpp
-|   `-- pass-by-value.cpp
-|-- String/
-|   |-- alphabets.cpp
-|   |-- armstrong.cpp
-|   `-- palindrome.cpp
-`-- README.md
+├── Arrays/
+├── Graphs/
+├── Linked List/
+├── Matrix/
+├── Pointers/
+├── Queue/
+├── Recursion/
+├── References in C/
+├── Stacks/
+├── String/
+├── Trees/
+└── README.md
 ```
 
 ## Requirements
 
-- C++ compiler such as `g++`
-- Terminal, Command Prompt, or PowerShell
+- A C++ compiler such as `g++`
+- A terminal, Command Prompt, or PowerShell
 
-Check whether `g++` is available:
+Verify that the compiler is installed:
 
 ```bash
 g++ --version
@@ -53,30 +47,27 @@ g++ --version
 
 ## How to Compile and Run
 
-Open a terminal in the project directory, move into the program folder, compile the source file, and run the generated executable.
+From the repository root, compile a program with `g++` and run the generated executable.
 
-Example using `Array/reverse.cpp`:
+Example for Arrays/reverse.cpp:
 
 ```bash
-cd Array
-g++ reverse.cpp -o reverse
+g++ Arrays/reverse.cpp -o reverse
 ./reverse
 ```
 
 On Windows PowerShell:
 
 ```powershell
-cd Array
-g++ reverse.cpp -o reverse.exe
+g++ Arrays\reverse.cpp -o reverse.exe
 .\reverse.exe
 ```
 
-To run another program, replace `Array` and `reverse.cpp` with the folder and file name you want to execute.
+To run another program, replace the file path with the folder and source file you want to execute.
 
-## Learning Objectives
+## Learning Goals
 
-- Practice array input, traversal, and manipulation
-- Use loops and conditional statements to solve small problems
-- Understand basic search and comparison logic
-- Work with number reversal and digit extraction
-- Strengthen C++ syntax, input, output, and compilation workflow
+- Practice input, output, loops, and conditions in C++
+- Understand basic data structures and algorithms
+- Improve logic building and problem-solving skills
+- Build confidence with compiling and running C++ programs

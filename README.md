@@ -1,6 +1,6 @@
 # DLithe C++ Practice Programs
 
-A collection of beginner-friendly C++ programs for practicing core programming concepts, data structures, and problem-solving techniques.
+A collection of beginner-friendly C++ programs for practicing core programming concepts, data structures, algorithms, and problem-solving.
 
 ## Overview
 
@@ -15,6 +15,7 @@ This repository contains standalone C++ programs organized by topic. Each file c
 - Linked lists
 - Stacks, queues, and trees
 - Graphs and matrix-based problems
+- Sorting techniques
 
 ## Repository Structure
 
@@ -28,6 +29,7 @@ DLithe/
 ├── Queue/
 ├── Recursion/
 ├── References in C/
+├── Sorting/
 ├── Stacks/
 ├── String/
 ├── Trees/
@@ -61,6 +63,13 @@ On Windows PowerShell:
 ```powershell
 g++ Arrays\reverse.cpp -o reverse.exe
 .\reverse.exe
+```
+
+On Windows Command Prompt:
+
+```cmd
+g++ Arrays\reverse.cpp -o reverse.exe
+reverse.exe
 ```
 
 To run another program, replace the file path with the folder and source file you want to execute.
